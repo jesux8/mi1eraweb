@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(42, 18, 54);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(33, 16, 39);
+}
+header {
+    background-image: url(../img/header.jpg);
+    height: 150px;
+    background-repeat: no-repeat;
+}
+#principal {
+    /* Hacemos flex para trabajar con la altura de mis hijos */
+    display: flex;
+}
+
+footer {
+    background-color:  rgb(54, 0, 50);
+    color: rgb(125, 125, 125);
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 20px;
+    font-style: italic;
+}
+nav {
+    width: 20%;
+    float: left;
+}
+#content {
+        width: 80%;
+        float: right;
+        /* Altura igual que tu padre flex*/
+        flex: 1;
+        /* Hacemos flex para trabajar con la altura de mis hijos */
+        display: flex;
+    background-color: rgb(33, 16, 39);
+
+}
+.cb {
+    clear: both;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+nav ul li {
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   padding: 16px 0;
+}
+nav ul li:hover {
+    color: rgb(48, 0, 94);
+    background-color: rgb(255, 255, 255);; 
+}
+a {
+    text-decoration: none;
+}
+
+#home {
+    background-color: rgb(25, 0, 23);
+    /* Altura igual que tu padre flex.
+    De esta forma hemos conseguido la altura del menu
+    aunque tenga menos contenido que él
+    */
+    flex: 1;
+    text-align: center;
+    background-image: url(../img/homebg.gif);
+    width: 100%;
+}
+#parrafos {
+    background-color: rgb(56, 28, 67);
+    /* Altura igual que tu padre flex.
+    De esta forma hemos conseguido la altura del menu
+    aunque tenga menos contenido que él
+    */
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: white;
+}
+#enlaces {
+    background-color: rgb(56, 28, 67);
+    /* Altura igual que tu padre flex.
+    De esta forma hemos conseguido la altura del menu
+    aunque tenga menos contenido que él
+    */
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: white;
+}
+#listas {
+    background-color: rgb(56, 28, 67);
+    /* Altura igual que tu padre flex.
+    De esta forma hemos conseguido la altura del menu
+    aunque tenga menos contenido que él
+    */
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: white;
+}
+a {
+    color: rgb(146, 175, 255);
+}
+.txt-center {
+    text-align: center;
+}
+.tag {
+    color: rgb(255, 60, 60);
+    font-size: 24px;
+    font-weight: bold;
+}
+.txt-azul {
+    color: rgb(116, 116, 255);
+}
+.caja {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(93, 93, 192);
+}
+a:hover {
+    color: rgb(18, 34, 79);
+    font-style: underline;
+    background-color: rgb(195, 206, 255); 
+}
+
+ol.orden li{
+    list-style: decimal-leading-zero;    
+}
+
+ol.orden li li{
+    list-style: lower-greek;    
+}
+
+ol.orden li li li{
+    list-style: georgian;    
+}
+
+ul.desorden li{
+    list-style: square;
+}
+
+ul.desorden li li{
+    list-style:inside;
+}
+
+ol.listafoto li{
+    list-style-image:url(../img/alien.png);
+}
+
+#tablas {
+    background-color: rgb(56, 28, 67);
+    /* Altura igual que tu padre flex.
+    De esta forma hemos conseguido la altura del menu
+    aunque tenga menos contenido que él
+    */
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: white;
+}
+
+#form {
+    background-color: rgb(56, 28, 67);
+    /* Altura igual que tu padre flex.
+    De esta forma hemos conseguido la altura del menu
+    aunque tenga menos contenido que él
+    */
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: white;
+}
+#multimedia {
+    background-color: rgb(56, 28, 67);
+    /* Altura igual que tu padre flex.
+    De esta forma hemos conseguido la altura del menu
+    aunque tenga menos contenido que él
+    */
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: white;
+}
+
+
+
+
+table.theader th {
+    background-color: rgb(36, 6, 57);
+    color: rgb(245, 221, 255);
+}
+table.theader td {
+    background-color: rgb(245, 221, 255);
+    color:  rgb(36, 6, 57);
+}
+
+table.striped tr:nth-child(even) {
+    background-color: rgb(250, 173, 249);
+    color: black;
+}
+table.striped tr:nth-child(odd) {
+    background-color: rgb(127, 208, 255);
+    color: black;
+}
+
+.s1dam th {
+    color: rgb(23, 124, 119);
+    font-size: 20px ;
+    font-style: italic;
+}
+.s1dam {
+    background-color: rgb(255, 255, 255);
+    color:  rgb(0, 0, 0);
+}
+
+table.s1dam {
+    text-align: center;
+}
+
+.horas {
+    font-weight: bold;
+    color: rgb(23, 124, 119);
+}
+
+.dias {
+    color: rgb(23, 124, 119);
+}
+
+.prog {
+    background-color: rgb(255, 227, 72);
+}
+
+.fol {
+    background-color: rgb(255, 140, 198);
+}
+
+.sisi {
+    background-color: green;
+
+}
+
+.ingles {
+    background-color:lightgreen;
+
+}
+
+.lmsg {
+    background-color: rgb(85, 85, 247);
+
+}
+
+.bdd {
+    background-color: rgb(166, 255, 225);
+
+}
+
+.ende {
+    background-color: rgb(255, 143, 124);
+
+}
+
+.horario {
+    padding-left: 330px;
+}
+    
+    
+
