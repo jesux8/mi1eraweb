@@ -59,10 +59,13 @@ nav ul li {
    font-weight: bold;
    padding: 16px 0;
 }
+
 nav ul li:hover {
     color: rgb(48, 0, 94);
     background-color: rgb(255, 255, 255);; 
 }
+ 
+
 a {
     text-decoration: none;
 }
