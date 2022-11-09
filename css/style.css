@@ -195,6 +195,17 @@ ol.listafoto li{
     color: white;
 }
 
+#formhtml5 {
+    background-color: rgb(56, 28, 67);
+    /* Altura igual que tu padre flex.
+    De esta forma hemos conseguido la altura del menu
+    aunque tenga menos contenido que él
+    */
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: white;
+}
 
 
 

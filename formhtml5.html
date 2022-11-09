@@ -26,10 +26,82 @@
                 </ul>
             </nav>
             <div id="content">
-                <div id="home">
-                    <img src="img/ninja.gif" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellendus id ex saepe, sint modi labore soluta dolores totam, quisquam atque dicta, est ipsa in unde quos cum officia praesentium.</p>
+                <div id="formhtml5">
+                    <h1>Formularios Html5</h1>
+                    <form
+                      action="pagina.php"
+                      method="post"
+                      enctype="multipart/form-data"
+                    >
+                      <fieldset>
+                        <legend>Mi Formulario</legend>
+                        <p>
+                          Url<br />
+                          <input
+                            type="url"
+                            name="url"
+                            id=""
+                            placeholder="www.example.com"
+                          />
+                        </p>
+                        <p>
+                          Email<br />
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="example@site.com"
+                          />
+                        </p>
+                        <p>Fecha<br /><input type="date" name="fecha" /></p>
+                        <p>
+                          Fecha y hora<br />
+                          <input type="datetime-local" name="datetime" />
+                        </p>
+                        <p>Mes<br /><input type="month" name="mes" /></p>
+                        <p>Semana<br /><input type="week" name="semana" /></p>
+                        <p>
+                          Número<br />
+                          <input
+                            type="number"
+                            name="num"
+                            value="0"
+                            min="0"
+                            max="100"
+                            step="10"
+                          />
+                        </p>
+                        <p>
+                          Número con deslizador<br />
+                          <input
+                            type="range"
+                            name="deslizador"
+                            min="0"
+                            max="100"
+                            step="10"
+                            oninput="updateTxtInput(this.value);"
+                          />
+                          <input type="text" id="sldTxt" value="0" />
+                        </p>
+                        <p>Color<br /><input type="color" name="color" /></p>
+                        <p>Archivo<br /><input type="file" name="archivo" /></p>
+                        <input type="hidden" name="" />
+                        <p>
+                          Búsqueda<br /><input
+                            type="search"
+                            name="busca"
+                            placeholder="Búsqueda..."
+                          />
+                        </p>
+                        <p>
+                          <input type="reset" name="reset" value="Limpiar" />
+                          <input type="submit" name="enviar" />
+                        </p>
+                      </fieldset>
+                    </form>
+                  </div>
                 </div>
+                <div class="cb"></div>
+              </div>
             </div>
             <div class="cb"></div>
         </div>
